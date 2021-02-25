@@ -1,8 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
-
-
+    id 'kotlin-android-extensions'
 }
 
 android {
@@ -10,8 +9,8 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.cardapioderestaurante"
-        minSdkVersion 21
+        applicationId "com.cardapio"
+        minSdkVersion 23
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -31,6 +30,10 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+
+    buildFeatures{
+        viewBinding true
     }
 }
 
